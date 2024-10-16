@@ -1,0 +1,16 @@
+.relaxVideo {
+    position: realtive;
+    padding-top: 95%;
+    padding-top: 50px;
+    height: 0;
+    overflow:hidden;
+  }
+  
+  .relaxVideo iframe {
+    position:absolute;
+    top:6%;
+    left:0;
+    width:100%;
+    height:99%;
+  
+  }

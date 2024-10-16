@@ -1,0 +1,132 @@
+body{
+    background:#0c1445;
+    color:white;
+    font-family:century gothic; 
+    font-size:16;
+  }
+  
+  #container {
+    border: 2px;
+    height: 120px;
+  }
+  
+  
+  
+  .grid-container > div {
+    background-color: lightblue;
+    border: 3px solid white;
+    text-align: center;
+  }
+  
+  
+  #delay1,
+  #delay2
+  {
+    position: relative;
+    color: white;
+    font-family:century gothic; 
+    font-size:16;
+    box-shadow: 10px 1000px 0;
+    
+  }
+  
+  #answerH11 {
+    color: gold;
+    box-shadow: 10px 1000px 0;
+    
+  }
+  
+  .blink_me {
+    animation: blinker 1s linear infinite;
+  }
+  
+  @keyframes blinker {
+    50% {
+      opacity: 0;
+    }
+  }
+  
+  
+  
+  #myContainer {
+    width: 1500px;
+    height: 100%;
+    position: relative;
+    background: #0c1445;
+  }
+  
+  
+  #myAnimation {
+    width: 50px;
+    height: 50px;
+    position: absolute;
+    background-color: white;
+  } 
+  
+  #largeStar {
+    font-size:700%;
+    color:white;
+  }
+  
+  button{
+    background: blue;
+    color: white;
+    font-family:century gothic,serif;font-size:30pt;font-weight:bold; 
+    width: 15%;
+    height: 12%;
+    margin-left: 43% ; 
+    box-shadow: 5px 5px 70px 5px;
+  
+  }
+  
+  button:hover,
+  Q1:hover{
+    background: yellow;
+    color: black;
+  }
+  
+  button:active{
+    background: lightblue;
+  }
+  
+  
+  #banner {
+  /*  position: relative; Put this back in if you want no starts at the top of the page*/ 
+    width: 100%;
+    height: 100%;
+    margin: 8px; 
+  }
+  
+  
+  #canvas {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width:100%;
+    height: 100%;
+    background: #0c1445;
+    z-index:1;
+  }
+  
+  
+  
+  h11 {
+    position: absolute;
+    color: white;
+    font-size: 23em;
+    z-index: 1;
+    top: 50%;
+    left: 50%; 
+    transform: translate(-50%, -50%);
+  }
+  
+  
+  
+  h3 {
+    color: white;
+    font-size: 1.5em;
+    z-index: 1;
+    top: 75%;
+    left: 25%; 
+   
+  }

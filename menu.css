@@ -1,0 +1,78 @@
+
+#navbar {
+    position: fixed;
+    top: 0;
+    width: 100%;
+}
+
+
+
+.overlay {
+  height: 35%;
+  width: 0;
+  position: fixed;
+  z-index: 100;
+  top: 0; 
+  right: 0;
+ /* background-color: rgb(0, 0, 235); /* rgba(20,255,20, 0.9); */
+  background-color: #450082; 
+  overflow-x: hidden;
+  transition: 0.5s;
+  opacity: 0.85;
+}
+
+
+.overlay-content {
+  position: relative; /* ensures the elements are below the close X */
+  top: 5%;
+  width: 100%;
+  text-align: center;
+  margin-top: 30px;
+  font-weight: bold;
+}
+
+
+.overlay a {
+  padding: 8px; /*vertical distance between entries */
+  text-decoration: none; /*OOP*/
+  font-size: 20px;
+  color:yellow;
+  display: block; /* displays entries as a vertical block */
+  transition: 0.9s; /*changes the width of the overlay*/
+}
+
+
+.overlay a:hover, .overlay a:focus {
+  color: #ffffff;
+}
+
+.overlay .closebtn {
+  position: absolute; 
+  top: 1%;
+  right: 5%;
+  font-size: 30px;
+  color: white;
+}
+
+
+@media screen and (max-height: 450px) {
+  .overlay a {font-size: 20px}
+  .overlay .closebtn {
+  font-size: 20px;
+  top: 15px;
+  right: 10%;
+  }
+}
+
+.myButton{
+  background: purple;
+  color: #dcd0ff;
+  border:white;
+  font-family:century gothic,serif;font-size:15pt;font-weight:bold; 
+  width: 18%;
+  height:50px;
+  margin-right: 10%;  
+  box-shadow: 5px 5px 0 0 light gray;
+  float:right;
+  
+}

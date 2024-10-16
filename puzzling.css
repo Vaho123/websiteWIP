@@ -1,0 +1,32 @@
+body {
+    background-color:#dcd0ff;
+   
+     font-family:century gothic; 
+    font-size:16;
+  }
+  
+  
+  /* To prevent the inbuild line break in headings - so stars are on the same line */
+  h3 {
+    display: inline;
+  }
+  
+  /* To give the stars colour - or not, if unchecked */
+  .checked {
+    color: orange;
+  }
+  
+  .myButton{
+    background: #321637;
+    color: white;
+    font-family:century gothic,serif;font-size:15pt;font-weight:bold; 
+    width: 20%;
+    height:50px;
+    margin-right: 10%;  
+    box-shadow: 3px 3px 0 0 #321637;
+    float:right;
+    border-radius: 12px;
+    border-color: blue;
+  }
+  
+  

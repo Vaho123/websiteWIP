@@ -1,0 +1,361 @@
+/* the * (mult) sign with curly brakets means everythin in the website */
+
+/**{*/
+/*  margin: 0;*/
+/*  padding: 0;*/
+/*}*/
+
+body{
+    font-family:century gothic; 
+    font-size:16;
+    background-color:#321637; 
+  
+  }
+  
+  h2{
+    top: 150px;
+    right: 10%;
+    width: 50;
+    color:yellow;
+    z-index:8;
+  }
+  
+  .main{
+    position: absolute;
+    top:0;
+    left:0;
+    z-index: -1;
+  }
+  
+  /* This is the main container which will hold the picture being displayed
+  (the other pictures are either side, but not displayed)*/
+  .main-Banner{
+    background-color:#321637;;
+    margin: 0 auto; /*ensures the pics are centred*/
+    width: 60%;  /*was 1200 */
+    height: 390px;  /* was 400 */
+    overflow: hidden; /*ensures pics outside main container do not show*/
+    margin-left:20%;
+    position: relative; /*to allow position absolute in the image container to allow the sliding o the pics*/
+  }
+  
+  /*sets the style for the 'div' box i.e. the container the images will be shown in*/
+  .main-Banner .imgBanClass {
+   width:100%;
+   height:100%;        /*i.e. of the container*/
+   position: absolute; /*only works if there is a position: realtive in the image details */
+   top: 0;              /*images will be in the top part of the container */
+   transition: all ease-in-out 500ms; /*every 500 miliseconds the picture eases in and the other out */
+   -webkit-transition: all ease-in-out 500ms;   /* windows for all browsers */
+   -moz-transition: all ease-in-out 500ms;      /* firefox browser */
+   -o-transition: all ease-in-out 500ms;        /* opera browsers */
+  
+    
+  }
+  
+  /*include image inside the banner */
+  .main-Banner #imgBanner3 {
+    background-image: url('Anthology_image.jpg');
+    background-size: cover; /* ensures it covers the entire container it is in*/
+  /*   background-position: center; */
+    background-repeat: no-repeat;
+    padding-right: 10%;
+   /* float:right; */
+  }
+  
+  
+  
+  /*include image inside the banner*/
+  .main-Banner #imgBanner2 {
+    background-image: url('ProgProfsLogo.png');
+    background-size: cover; /* ensures it covers the entire container it is in*/
+    background-position: center; 
+    background-repeat: no-repeat;
+    padding-top:11%;
+    color:#450082;
+  }
+  
+  
+  /*include image inside the banner*/
+  .main-Banner #imgBanner1 {
+    background-image: url('Book_Cover_jpeg_300.jpg');
+    background-size: cover; /* ensures it covers the entire container it is in*/
+    background-position: right; 
+    background-repeat: no-repeat;
+    
+  }
+  
+  
+  
+  .imgBanButton{
+    width: 100px;
+    height: 100px;
+    background-color: lightblue;
+    background-image: url('leftArrow.png');
+    border-radius: 4px;
+    position: absolute;
+    top: 135px;  /* height = 300 px, height = 40 px, therfore vertical centre = 180 px*/
+    z-Index: 2000; /*To ensure the button is on top of the stack of images*/
+    opacity: 0.8;
+    cursor: pointer; /*maintains pointer shape of the cursor*/
+    background-repeat: no-repeat
+  }
+  
+  .imgBanButton:hover{
+    opacity: 1;
+    border-width: 3px;
+    border-color: white;
+  }
+  
+  .imgBanButton-prev:hover{
+    opacity: 1;
+    border-width: 3px;
+    border-color: white;
+  
+  }
+  
+  .imgBanButton-next:hover{
+    opacity: 1;
+    border-width: 3px;
+    border-color: white;
+  
+  }
+  #imgBanButton-prev{
+    left: 3px;
+    width: 30px;
+    height: 30px;
+    background-color: black;
+    background-image: url('leftArrowWhite.png');
+    background-size: 60%;
+    background-position: center;
+    border-radius: 4px;
+    position: absolute;
+    margin-left:2%;
+    top: 190px;  /* height = 300 px, height = 40 px, therfore vertical centre = 180 px*/
+    z-Index: 2000; /*To ensure the button is on top of the stack of images*/
+    opacity: 0.9;
+    cursor: pointer; /*maintains pointer shape of the cursor*/
+    background-repeat: no-repeat
+  }
+  
+  .imgBanButton-next{
+    left: 94.4%;  
+    width: 30px;
+    height: 30px;
+    background-color: black;
+    background-image: url('rightArrowWhite.png');
+    background-size: 60%;
+    background-position: center;
+    border-radius: 4px;
+    position: absolute;
+    top: 190px;  /* height = 300 px, height = 40 px, therfore vertical centre = 180 px*/
+    z-Index: 2000; /*To ensure the button is on top of the stack of images*/
+    opacity: 0.9;
+    cursor: pointer; /*maintains pointer shape of the cursor*/
+    background-repeat: no-repeat
+  }
+  
+  .fixedText {
+    top: 64.5%;
+    width: 25%;
+    height: 5%;
+    left: 35%;
+    font-family: Tw Cen MT;
+    font-size: 20px;
+    /*color: #222;*/
+    z-index: -1;
+    position: fixed; 
+    text-align: center;
+    background-color:#321637; 
+    /*background-color:#d3d3d3;*/
+    color: yellow;
+    opacity:0.9;
+    border-radius: 5px;
+  }
+  
+  .main-Banner .imgban-box h1 {
+    font-family: Tw Cen MT;
+    font-size: 60px;
+    color: yellow;
+    padding-left:7%;
+    padding-top:0;
+  
+  
+  }
+  
+  .main-Banner .imgban-box h2{
+    font-family: Tw Cen MT;
+    font-size: 60px;
+    color: #321637;
+    float:right;
+    padding-right: 2%;
+  }
+  
+  .main-Banner .imgban-box p{
+    padding-top: 6px;
+    padding-right: 5%;
+    font-family: Tw Cen MT;
+    font-size: 16px;
+    color: orange;
+    float:right;
+  }
+  
+  .main-Banner #imgBanner3 .imgban-box {
+    padding-top: 120px;
+    padding-left: 100px;
+  }
+  
+  
+  .main-Banner #imgBanner2 .imgban-box {
+    padding-top: 120px;
+    padding-right: 100px;
+    float: right;
+    text-align: right;
+  }
+  
+  
+  .main-Banner #imgBanner1 .imgban-box {
+    padding-top: 70px;
+    padding-left: 100px;
+    
+    
+  }
+  
+   
+  .round:hover{
+    width: 5%;
+    height: auto; 
+    transform: scale(4);
+    z-index: 10; 
+  }
+  
+  .round:not(:hover) {
+    width:12% ;
+    height:auto ;
+    padding-left:1%;
+    border: 0;
+  
+  }
+  
+  #subheading {
+      top: 0;
+      width: 100%;
+  }
+  
+  
+  
+  
+  #navbar {
+      position: fixed;
+      top: 0;
+      width: 100%;
+  }
+  
+  
+  
+  .overlay {
+    height: 35%;
+    width: 0;
+    position: fixed;
+    z-index: 100;
+    top: 0; 
+    right: 0;
+    background-color: rgb(0, 0, 235); /* rgba(20,255,20, 0.9); */
+    overflow-x: hidden;
+    transition: 0.5s;
+    opacity: 0.85;
+  }
+  
+  
+  .overlay-content {
+    position: relative; /* ensures the elements are below the close X */
+    top: 5%;
+    width: 100%;
+    text-align: center;
+    margin-top: 30px;
+    font-weight: bold;
+  }
+  
+  
+  .overlay a {
+    padding: 8px; /*vertical distance between entries */
+    text-decoration: none; /*OOP*/
+    font-size: 20px;
+    color:yellow;
+    display: block; /* displays entries as a vertical block */
+    transition: 0.9s; /*changes the width of the overlay*/
+  }
+  
+  
+  .overlay a:hover, .overlay a:focus {
+    color: #ffffff;
+  }
+  
+  .overlay .closebtn {
+    position: absolute; 
+    top: 1%;
+    right: 5%;
+    font-size: 30px;
+    color: white;
+  }
+  
+  
+  @media screen and (max-height: 450px) {
+    .overlay a {font-size: 20px}
+    .overlay .closebtn {
+    font-size: 20px;
+    top: 15px;
+    right: 10%;
+    }
+  }
+  
+  .circle {
+    height: 100px;
+    width: 100px;
+    background-color: blue;
+    border-radius: 50%;
+    display: inline-block;
+    box-shadow: 0 0 0 15px lightgrey;
+    text-align:center
+  }
+  
+  shadows {
+    width: 250px;
+    box-shadow: 0 4px 8px 0 rgba(150, 150, 150, 150), 0 6px 20px 0 rgba(150, 75, 50, 10.19);
+  
+  
+  }
+  
+  hiding {
+    width: 250px;
+    box-shadow: 0 4px 8px 0 rgba(150, 150, 150, 150), 0 6px 20px 0 rgba(150, 75, 50, 10.19);
+  
+  
+  }
+  
+  
+  #floatingbubbles {
+      width: 100%;
+      height: 100%;
+  }
+  
+  .video-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+    margin-top: 30px;
+  }
+  
+  .video-item iframe {
+    width: 100%;
+    height: 200px;
+    border: 2px solid #333;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  }
+  
+  
+  
+  
+  
+  
+  

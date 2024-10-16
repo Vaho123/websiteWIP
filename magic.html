@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Magic Trick</title>
+   <link rel="stylesheet" type="text/css" href="magic.css">
+    <link rel="stylesheet" href="menu.css" /> 
+</head>
+<body>
+  
+ <span style="font-size:20px;cursor:pointer; float:right; color:white" onclick="openNav()">&#9776;Open</span>  
+
+<h3><center><strong>Enter the letters of the cards your number appears on: </strong></center></h3>
+
+<!-- Display the cards   -->
+
+<div id="container">
+	<img src="Card_A.png" alt="Card A" width= 35% height= 145% style= "float:left"> 
+	<img src="Card_B.png" alt="Card B" width= 35% height= 145% style="float:right">  
+	<br><br><br><br><br><br>
+	<img src="Card_C.png" alt="Card C" width= 35% height= 145% style="float:left ">
+	<img src="Card_D.png" alt="Card D" width= 35% height= 145% style="float:right"> 
+  <br><br><br><br><br><br>
+	<img src="Card_E.png" alt="Card E" width= 35% height= 142% style="float:left">
+	<img src="Card_F.png" alt="Card F" width= 35% height= 142% style="float:right">  
+</div>
+
+<input id=userInp type="text" placeholder="Type in the letters here" name="userInpN" size="20"  onchange="calcAnswer()"  style="padding-left: 2%; position: relative; left: 8%; top:2%; font-size:20; height:30px; background-color:lightblue;  " > 
+  
+
+<button id="Btn" type="button" style="position: relative; top: -250px; " onclick= "calcAnswer()">Magic!</button>
+
+
+<div id="myNav" class="overlay">
+  <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a> 
+  <div class="overlay-content">
+    <div  id ="Home2"><a href="index.html">Home</a></div>
+    <a href="javascript:void()" onclick="incFontSize()">Change text size</a>
+    <a href="javascript:void()" onclick="changeTheme()">Change theme</a>
+   <a href="javascript:void()" onclick="writing()">Writing</a>
+    <!-- <a href="attributions.html">Attributions</a> -->
+    <!-- <a href="about.html">About</a> -->
+    </div>
+</div> 
+
+<script src='magic.js'></script>   
+<script src='menu.js'></script>  
+<script src='reading.js'></script>    
+
+  
+</body>
+</html>

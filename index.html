@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title> </title>
+     <link rel="stylesheet" type="text/css" href="style.css">
+     <link rel="stylesheet" type="text/css" href="menu.css">
+</head>
+
+<body>
+  
+  <canvas class="main" id="floatingbubbles" > </canvas> 
+
+  
+  <span  style="font-size:20px;cursor:pointer; float:right; color:white" onclick="openNav()">&#9776;Open</span>  
+
+  <div class="main-Banner" z-index = 0 id="main-Banner"  onmouseenter="enterBanner()"  onmouseleave="exitBanner()">
+  
+    <button class = imgBanButton-next id="imgBanButton-next"   onclick="nextImage()"></button>
+    <button class = imgBanButton id="imgBanButton-prev" onclick="prevImage()"></button>
+    <div class ="fixedText" id ="fixedText">
+    
+      <strong><center>Click an image to find out more</center></strong>
+     </div>
+ 
+    <div class="imgBanClass" id="imgBanner1" onclick="location.href = 'puzzling.html';">
+       <div class="imgban-box">
+         <h1>Puzzling</h1>
+     <!--    <p style="text-align: center">Readpadding-left: 6%;  an extract from </p> -->
+       </div>
+     </div>
+ 
+     <div class="imgBanClass" id="imgBanner2" style="background-color:yellow; padding-left:5%;" onclick="clicked2()">
+      <h1 style="margin-left:5%; margin-top: -10%">Courses </h1>
+      <br><br>
+       <div class="imgban-box" style="padding-left:5%;" >
+         <br><br> <br><br> <br><br> <br><br>
+         <h3 style="float:right; padding-right:3%;">Choose which programming course you would like to take </h3>
+       </div>
+     </div>
+     
+   
+     <div class="imgBanClass" id="imgBanner3" onclick="location.href = 'intoBlue.html';">
+        <div class="imgban-box">
+         
+        <h2>Into the Blue</h2>
+        <br><p></p>
+     <!--    <p>Read and extract from </p>    -->
+         <p></p>
+       </div>
+      <div class="imgBanClass" id="imgBanner4" onclick="clicked4()">
+        <div class="imgban-box">
+         <p></p>
+       </div>
+       
+     <div class="imgBanClass" id="imgBanner5" onclick="clicked5()">
+        <div class="imgban-box">
+         <p></p>
+       </div>
+     </div> <!-- 3,2,1 to ensure the one to be seen first is loaded last -->
+     
+   </div> 
+    
+  
+ 
+ </div>
+     
+ 
+ </div>
+   
+ 
+
+</div>
+    
+
+</div>
+
+
+
+<br>
+  <a href="magic.html">
+     <img class = "round" src="Magic.png" alt="Magic hat and wand ascending" width=12% height=auto style="padding-left:4%"  onclick="MagicTrick()">  
+  </a>
+<a href="writing.html">
+<img class = "round" src="Writing.png" alt="Book covers" width=12% height=auto style="padding-left:1%" onclick="myWriting()">    
+</a>
+<!-- <img class="round" src="Coding.png" alt="Language logos" width=12% height=auto style="padding-left:1%" onclick="ProgLangs()">     -->
+
+<!-- <img class = "round" src="Courses.png" alt="ProgProfs logo" width=13% height=auto style="padding-left:1%" onclick="myCourses()">   -->
+
+<!-- <img class = "round" src="musicClefs.png" alt="music Clefs" width=13% height=auto style="padding-left:1%" onclick="myCourses()">   -->
+<a href="logic.html">
+<img class = "round" src="SiteSamples.png" alt="Images from Site Samples" width=13% height=auto style="padding-left:1%" onclick="myCourses()">  
+</a>
+<a href="mindful.html">
+<img class = "round" src="Mindfullness2.png" alt="Mindfullness symbol" width=12% height=auto style="padding-left:1%"  onclick="mindfullness()">  
+</a>
+<a href="myWord.html">
+    <img class = "round" src="WordGame2.png" alt="Letters on tiles" width=12% height=auto style="padding-left:1%" onclick="myWordle()">    
+</a>
+<a href="drumkit.html">
+  <img class = "round" src="drumkit_icon.png" alt="drumkit" width=12% height=auto style="padding-left:1%  ">    
+</a>
+<a href="videos.html">
+  <img class = "round" src="teaching.png" alt="videos" width=12% height=auto style="padding-left:1%  ">    
+</a>
+<!-- <img class = "round" src="ShopFront2.png" alt="Image of a shop front" width=12% height=auto style="padding-left:1%" onclick="myShop()">    
+-->
+
+<br><br><br>
+
+
+<div id="myNav" class="overlay">
+  <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a> 
+  <div class="overlay-content">
+    <div  id ="Home2"><a href="index.html">Home</a></div>
+    <a href="javascript:void()" onclick="incFontSize()">Change text size</a>
+    <a href="javascript:void()" onclick="changeTheme()">Change theme</a>
+   <a href="javascript:void()" onclick="writing()">Writing</a>
+    <a href="attributions.html">Attributions</a>
+    <a href="about.html">About</a>
+    </div>
+    
+   
+
+</div> 
+
+
+
+<script src='script.js'></script>
+<script src='reading.js'></script>  
+
+</body>
+</html>

@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+ <link rel="stylesheet" href="word.css" /> 
+ <link rel="stylesheet" href="menu.css" /> 
+
+</head>
+<body id = "body">
+  
+<span style="font-size:20px;cursor:pointer; float:right; color:#321637;" onclick="openNav()">&#9776;Open</span>  
+
+  
+  
+<h1><center>My Word!e</center></h1>
+<br>
+<strong><p>Please note: This is W.I.P</p></strong>
+<p>Enter letters to guess the word</p>
+<p>Blue means - yet to guess</p>
+<p>Yellow means right letter, wrong place</p>
+<p>Green means  means right letter, right place</p>
+<br>
+
+
+<form id="myForm">
+  <div class="grid-container">
+
+
+    <!-- Row 1-->
+       <div id="dletter01" style="display: none">
+          <input class = "row1" type="text"  id="letter01" maxlength="1" onkeyup="this.value = this.value.toUpperCase(); letter02.focus();
+            letter02.select();">
+       </div>
+       <div id="dletter02" style="display: none">
+          <input class = "row1" type="text"  id="letter02" maxlength="1" onkeyup="this.value = this.value.toUpperCase(); letter03.focus();
+            letter03.select();">
+       </div>
+       <div id="dletter03" style="display: none">
+          <input class = "row1" type="text" id="letter03" maxlength="1" onkeyup="this.value = this.value.toUpperCase(); letter04.focus();
+            letter04select();">
+       </div>
+       <div id="dletter04" style="display: none">
+          <input class = "row1" type="text"  id="letter04" maxlength="1" onkeyup="this.value = this.value.toUpperCase(); letter05.focus();
+            letter05.select();">
+       </div>
+       <div id="dletter05" style="display: none">
+          <input class = "row1" type="text"  id="letter05" maxlength="1" onkeyup="this.value = this.value.toUpperCase();"> 
+       </div>
+
+
+    <!-- Row 2-->
+       <div id="dletter11" style="display: none" >
+          <input class = "row2" type="text"  id="letter11" maxlength="1" onkeyup="this.value = this.value.toUpperCase(); letter12.focus();
+            letter12.select();">
+       </div>
+       <div id="dletter12" style="display: none" >
+          <input class = "row2" type="text"  id="letter12" maxlength="1" onkeyup="this.value = this.value.toUpperCase(); letter13.focus();
+            letter13.select();">
+       </div>
+       <div id="dletter13" style="display: none" >
+          <input class = "row2" type="text" id="letter13" maxlength="1" onkeyup="this.value = this.value.toUpperCase(); letter14.focus();
+            letter14.select();">
+       </div>  
+       <div id="dletter14" style="display: none">
+          <input class = "row2" type="text"  id="letter14" maxlength="1" onkeyup="this.value = this.value.toUpperCase(); letter15.focus();
+            letter15.select();">
+       </div>
+       <div id="dletter15" style="display: none">
+          <input class = "row2" type="text"  id="letter15" maxlength="1" onkeyup="this.value = this.value.toUpperCase(); subBtn.focus();
+            subBtn.select();">
+       </div>
+ 
+     <!-- Row 3-->
+       <div id="dletter21" style="display: none">
+          <input class = "row3" type="text"  id="letter21" maxlength="1" onkeyup="this.value = this.value.toUpperCase(); letter22.focus();
+            letter22.select();">
+       </div>
+       <div id="dletter22" style="display: none">
+          <input class = "row3" type="text"  id="letter22" maxlength="1" onkeyup="this.value = this.value.toUpperCase(); letter23.focus();
+            letter23.select();">
+       </div>
+       <div id="dletter23" style="display: none">
+          <input class = "row3" type="text" id="letter23" maxlength="1" onkeyup="this.value = this.value.toUpperCase(); letter24.focus();
+            letter24.select();">
+       </div>  
+       <div id="dletter24" style="display: none">
+          <input class = "row3" type="text"  id="letter24" maxlength="1" onkeyup="this.value = this.value.toUpperCase(); letter25.focus();
+            letter25.select();">
+       </div>
+       <div id="dletter25" style="display: none">
+          <input class = "row3" type="text"  id="letter25" maxlength="1" onkeyup="this.value = this.value.toUpperCase(); subBtn.focus();
+            subBtn.select();">
+       </div>
+       
+           <!-- Row 4-->
+       <div id="dletter31" style="display: none">
+          <input class = "row4" type="text"  id="letter31" maxlength="1" onkeyup="this.value = this.value.toUpperCase(); letter32.focus();
+            letter32.select();">
+       </div>
+       <div id="dletter32" style="display: none">
+          <input class = "row4" type="text"  id="letter32" maxlength="1" onkeyup="this.value = this.value.toUpperCase(); letter33.focus();
+            letter33.select();">
+       </div>
+       <div id="dletter33" style="display: none">
+          <input class = "row4" type="text" id="letter33" maxlength="1" onkeyup="this.value = this.value.toUpperCase(); letter34.focus();
+            letter34.select();">
+       </div>  
+       <div id="dletter34" style="display: none">
+          <input class = "row4" type="text"  id="letter34" maxlength="1" onkeyup="this.value = this.value.toUpperCase(); letter35.focus();
+            letter35.select();">
+       </div>
+       <div id="dletter35" style="display: none">
+          <input class = "row4" type="text"  id="letter35" maxlength="1" onkeyup="this.value = this.value.toUpperCase(); subBtn.focus();
+            subBtn.select();">
+       </div>
+       
+           <!-- Row 5-->
+       <div id="dletter41" style="display: none">
+          <input class = "row5" type="text"  id="letter41" maxlength="1" onkeyup="this.value = this.value.toUpperCase(); letter42.focus();
+            letter42.select();">
+       </div>
+       <div id="dletter42" style="display: none">
+          <input class = "row5" type="text"  id="letter42" maxlength="1" onkeyup="this.value = this.value.toUpperCase(); letter43.focus();
+            letter43.select();">
+       </div>
+       <div id="dletter43" style="display: none">
+          <input class = "row5" type="text" id="letter43" maxlength="1" onkeyup="this.value = this.value.toUpperCase(); letter44.focus();
+            letter44.select();">
+       </div>  
+       <div id="dletter44" style="display: none">
+          <input class = "row5" type="text"  id="letter44" maxlength="1" onkeyup="this.value = this.value.toUpperCase(); letter45.focus();
+            letter45.select();">
+       </div>
+       <div id="dletter45" style="display: none">
+          <input class = "row5" type="text"  id="letter45" maxlength="1" onkeyup="this.value = this.value.toUpperCase(); subBtn.focus();
+            subBtn.select();">
+       </div>
+
+    <!-- Row 6-->
+       <div id="dletter51" style="display: none">
+          <input class = "row6" type="text"  id="letter51" maxlength="1" onkeyup="this.value = this.value.toUpperCase(); letter52.focus();
+            letter52.select();">
+       </div>
+       <div id="dletter52" style="display: none">
+          <input class = "row6" type="text"  id="letter52" maxlength="1" onkeyup="this.value = this.value.toUpperCase(); letter53.focus();
+            letter53.select();">
+       </div>
+       <div id="dletter53" style="display: none">
+          <input class = "row6" type="text" id="letter53" maxlength="1" onkeyup="this.value = this.value.toUpperCase(); letter54.focus();
+            letter54.select();">
+       </div>  
+       <div id="dletter54" style="display: none">
+          <input class = "row6" type="text"  id="letter54" maxlength="1" onkeyup="this.value = this.value.toUpperCase(); letter55.focus();
+            letter55.select();">
+       </div>
+       <div id="dletter55" style="display: none">
+          <input class = "row6" type="text"  id="letter55" maxlength="1" onkeyup="this.value = this.value.toUpperCase(); subBtn.focus();
+            subBtn.select();">
+       </div>
+
+    </div>
+  
+</form>
+<br>
+<button type="button" class="myButton" style="background-color:#321637" id="subBtn" onclick="mainGame()">Submit</button>
+<button type="button" class="myButton" id="againBtn" style="display: none; background-color:#321637;" onclick="reset()">Play Again</button>
+<button type="button" class="myButton" id="dispBtn" style="display: none; background-color:#321637;" onclick="reveal()">Reveal Answer</button>
+
+<div id="myNav" class="overlay">
+  <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a> 
+  <div class="overlay-content">
+    <div  id ="Home2"><a href="index.html">Home</a></div>
+    <a href="javascript:void()" onclick="incFontSize()">Change text size</a>
+    <a href="javascript:void()" onclick="changeTheme()">Change theme</a>
+   <a href="javascript:void()" onclick="writing()">Writing</a>
+    <a href="attributions.html">Attributions</a>
+    <a href="about.html">About</a>
+    </div>
+</div> 
+
+
+<script src="word.js"></script>
+<script src="menu.js"></script>
+<script src='reading.js'></script>  
+
+</body>
+</html>

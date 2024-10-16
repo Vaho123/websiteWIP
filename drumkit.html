@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <title>Drum Kit Challenge</title>
+
+  
+  <link rel="stylesheet" type="text/css" href="drumkit.css"> 
+  <link rel="stylesheet" type="text/css" href="menu.css">
+
+
+</head>
+<body>
+
+    <span style="font-size:20px;cursor:pointer; float:right; color:#321637;" onclick="openNav()">&#9776;Open</span>  
+
+
+
+    <h1>Click any home row key<h1></h1>
+        <h2> (a,s,d,f,g,h,j,k,l) to make it play</h2>
+
+
+    <div id="container">
+
+        <image id="fullImage"  src = "drumkit2.png" alt = "Image of a bear playing a full drumkit"></image>
+
+        <image id="head" src = "head.png" ></image>     
+        <image id="drumcentre" src = "drumcentre.png" ></image>
+        <image id="bodytop" src = "bodytop.png" ></image>
+        <image id="rightArm" src = "rightarm.png" ></image>
+        <image id="leftArm" src = "leftarm.png" ></image>
+    </div>
+   
+
+    <div id="myNav" class="overlay">
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a> 
+        <div class="overlay-content">
+          <div  id ="Home2"><a href="index.html">Home</a></div>
+          <a href="javascript:void()" onclick="incFontSize()">Change text size</a>
+          <a href="javascript:void()" onclick="changeTheme()">Change theme</a>
+          <a href="attributions.html">Attributions</a>
+          <a href="about.html">About</a>
+          </div>
+      </div>  
+
+    
+      
+      <!-- <script src='logic.js'></script> -->
+      <!-- <script src='puzzling.js'></script>   
+      <script src='menu.js'></script>    -->
+      <!-- <script src='reading.js'></script>   -->
+      <script src='drumkit.js'></script>   
+
+</body>
+</html>
